@@ -15,12 +15,42 @@ charstr = 5
 characc = 5
 charagil = 5
 print("Allocate {} skill points to your attributes in order: ".format(skillpoints))
-charhp = int(input("- HP = {}".format(charhp)))
-print("- Stamina = {}".format(charstam))
-print("- Mana = {}".format(charmana))
-print("- Strength = {}".format(charstr))
-print("- Accuracy = {}".format(characc))
-print("- Agility = {}".format(charagil))
+while True:
+    try:
+        charhp = int(input("- HP = {}".format(charhp)))
+        break
+    except:
+        print("enter a number")
+while True:
+    try:
+        charstam = int(input("- Stamina = {}".format(charstam)))
+        break
+    except:
+        print("enter a number")
+while True:
+    try:
+        charmana = int(input("- Mana = {}".format(charmana)))
+        break
+    except:
+        print("enter a  number")
+while True:
+    try:
+        charstr = int(input("- Strength = {}".format(charstr)))
+        break
+    except:
+        print("enter a number")
+while True:
+    try:
+        characc = int(input("- Accuracy = {}".format(characc)))
+        break
+    except:
+        print("enter a number")
+while True:
+    try:
+        charagil = int(input("- Agility = {}".format(charagil)))
+        break
+    except:
+        print("enter a number")
 
 
 skillattribution = list(input)
