@@ -109,18 +109,11 @@ def skillpointallocation():
         except:
             print("enter a number")
 
-    
-print(charhp)
-print(charstam)
-print(charmana)
-print(charstr)
-print(characc)
-print(charagil)
-
+# Enemy random gen
 def enemyrand():
     enemy = ri()
-    enhp = ri((1.0, 10.0) * level)
-    endmg = ri
-    enacc = ri
+    enhp = ri((1, 10) * level)
+    endmg = ri((1, 5) * level)
+    enacc = ri(40,80)
     
 startgame.startgame()
