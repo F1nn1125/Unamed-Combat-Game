@@ -16,97 +16,98 @@ characc = 5
 charagil = 5
 
 #Skillpoint allocation
-print("Allocate {} skill points to your attributes of Health, Stamina, Mana, Strength, Accuracy and Agility: ".format(skillpoints))
-while True:
-    try:
-        skilladd = int(input("- Health = {} (You have {} skill points left.): ".format(charhp, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            charhp = charhp + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
-while True:
-    try:
-        skilladd = int(input("- Stamina = {} (You have {} skill points left.): ".format(charstam, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            charstam = charstam + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
-while True:
-    try:
-        skilladd = int(input("- Mana = {} (You have {} skill points left.): ".format(charmana, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            charmana = charmana + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
-while True:
-    try:
-        skilladd = int(input("- Strength = {} (You have {} skill points left.): ".format(charstr, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            charstr = charstr + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
-while True:
-    try:
-        skilladd = int(input("- Accuracy = {} (You have {} skill points left.): ".format(characc, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            characc = characc + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
-while True:
-    try:
-        skilladd = int(input("- Agility = {} (You have {} skill points left.): ".format(charagil, skillpoints)))
-        if skilladd < 0:
-            print("enter a number above 0")
-            continue
-        if skilladd > skillpoints:
-            print("You cannot allocate this many!")
-            continue
-        else:
-            charagil = charagil + skilladd
-            skillpoints = skillpoints - skilladd
-            break
-    except:
-        print("enter a number")
+def skillpointallocation():
+    print("Allocate {} skill points to your attributes of Health, Stamina, Mana, Strength, Accuracy and Agility: ".format(skillpoints))
+    while True:
+        try:
+            skilladd = int(input("- Health = {} (You have {} skill points left.): ".format(charhp, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                charhp = charhp + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
+    while True:
+        try:
+            skilladd = int(input("- Stamina = {} (You have {} skill points left.): ".format(charstam, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                charstam = charstam + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
+    while True:
+        try:
+            skilladd = int(input("- Mana = {} (You have {} skill points left.): ".format(charmana, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                charmana = charmana + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
+    while True:
+        try:
+            skilladd = int(input("- Strength = {} (You have {} skill points left.): ".format(charstr, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                charstr = charstr + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
+    while True:
+        try:
+            skilladd = int(input("- Accuracy = {} (You have {} skill points left.): ".format(characc, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                characc = characc + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
+    while True:
+        try:
+            skilladd = int(input("- Agility = {} (You have {} skill points left.): ".format(charagil, skillpoints)))
+            if skilladd < 0:
+                print("enter a number above 0")
+                continue
+            if skilladd > skillpoints:
+                print("You cannot allocate this many!")
+                continue
+            else:
+                charagil = charagil + skilladd
+                skillpoints = skillpoints - skilladd
+                break
+        except:
+            print("enter a number")
 
     
 print(charhp)
