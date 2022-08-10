@@ -1,4 +1,5 @@
 def startgame():
     print("|------------|")
     print("| Title Here |")
-    print("|------------|")
+    print("|------------|\n")
+    charname = input("Welcome traveler, what is your characters name? ")
