@@ -14,55 +14,116 @@ charmana = 5
 charstr = 5
 characc = 5
 charagil = 5
+
+#Skillpoint allocation
 print("Allocate {} skill points to your attributes of Health, Stamina, Mana, Strength, Accuracy and Agility: ".format(skillpoints))
 while True:
     try:
         skilladd = int(input("- HP = {}".format(charhp)))
         if skilladd < 0:
             print("enter a number above 0")
-        skillpoints = skillpoints - skilladd
+            continue
+        if skilladd > skillpoints:
+            print("You cannot allocate this many!")
+            continue
+        else:
+            charhp = charhp + skilladd
+            skillpoints = skillpoints - skilladd
+            break
+    except:
+        print("enter a number")
+while True:
+    try:
+        skilladd = int(input("- Stamina = {} (You have {} skill points left)".format(charstam, skillpoints)))
+        if skilladd < 0:
+            print("enter a number above 0")
+            skilladd = 0
+            continue
+        if skillpoints < 0:
+            print("You cannot allocate this many!")
+            skillpoints = skillpoints - skilladd
+            skilladd = 0
+            continue
+        else:
+            charstam = charstam + skilladd
+        break
+    except:
+        print("enter a number")
+while True:
+    try:
+        skilladd = int(input("- Mana = {} (You have {} skill points left)".format(charmana, skillpoints)))
+        if skilladd < 0:
+            print("enter a number above 0")
+            skilladd = 0
+            continue
         if skillpoints < 0:
             print("You cannot allocate this many!")
             skillpoints = skilladd
             skilladd = 0
+            continue
         else:
-            charhp = charhp + skilladd
+            charmana = charmana + skilladd
         break
     except:
         print("enter a number")
 while True:
     try:
-        charstam = charstam + int(input("- Stamina = {}".format(charstam)))
+        skilladd = int(input("- Strength = {} (You have {} skill points left)".format(charstr, skillpoints)))
+        if skilladd < 0:
+            print("enter a number above 0")
+            skilladd = 0
+            continue
+        if skillpoints < 0:
+            print("You cannot allocate this many!")
+            skillpoints = skilladd
+            skilladd = 0
+            continue
+        else:
+            charstr = charstr + skilladd
         break
     except:
         print("enter a number")
 while True:
     try:
-        charmana = charmana + int(input("- Mana = {}".format(charmana)))
-        break
-    except:
-        print("enter a  number")
-while True:
-    try:
-        charstr = charstr + int(input("- Strength = {}".format(charstr)))
-        break
-    except:
-        print("enter a number")
-while True:
-    try:
-        characc = characc + int(input("- Accuracy = {}".format(characc)))
-        break
-    except:
-        print("enter a number")
-while True:
-    try:
-        charagil = charagil + int(input("- Agility = {}".format(charagil)))
+        skilladd = int(input("- Accuracy = {} (You have {} skill points left)".format(characc, skillpoints)))
+        if skilladd < 0:
+            print("enter a number above 0")
+            skilladd = 0
+            continue
+        if skillpoints < 0:
+            print("You cannot allocate this many!")
+            skillpoints = skilladd
+            skilladd = 0
+            continue
+        else:
+            characc = characc + skilladd
         break
     except:
         print("enter a number")
-
-
-skillattribution = list(input)
+while True:
+    try:
+        skilladd = int(input("- Agility = {} (You have {} skill points left)".format(charagil, skillpoints)))
+        if skilladd < 0:
+            print("enter a number above 0")
+            skilladd = 0
+            continue
+        if skillpoints < 0:
+            print("You cannot allocate this many!")
+            skillpoints = skilladd
+            skilladd = 0
+            continue
+        else:
+            charagil = charagil + skilladd
+        break
+    except:
+        print("enter a number")
+    
+print(charhp)
+print(charstam)
+print(charmana)
+print(charstr)
+print(characc)
+print(charagil)
 
 def enemyrand():
     enemy = ri()
