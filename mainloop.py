@@ -5,8 +5,17 @@ import startgame
 level = 1
 
 #Character maker
-charrace = input("")
-charclass = input("")
+charrace = input("""
+Choose a race:
+1. Orc
+2. Elf
+3. Human
+""")
+charclass = input("""
+1. Fighter (mele damage scaling)
+2. Mage (mana & magic damage scaling)
+3. Brute (hitpoint scaling)
+""")
 skillpoints = 15
 charhp = 5
 charstam = 5
