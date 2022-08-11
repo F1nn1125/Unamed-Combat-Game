@@ -7,13 +7,13 @@ level = 1
 #Character maker
 charrace = input("""
 Choose a race:
-1. Orc
-2. Elf
-3. Human
+1. Orc (health & damage scaling)
+2. Elf (mana & agility scaling)
+3. Human (accuracy & stamina scaling)
 """)
 charclass = input("""
 1. Fighter (mele damage scaling)
-2. Mage (mana & magic damage scaling)
+2. Mage (mana scaling)
 3. Brute (hitpoint scaling)
 """)
 skillpoints = 15
