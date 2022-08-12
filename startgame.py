@@ -1,5 +1,5 @@
 def startgame():
-    print("""""
+    print("""
 |------------|
 | Title Here |
 |------------|\n""")

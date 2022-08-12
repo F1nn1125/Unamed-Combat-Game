@@ -28,21 +28,26 @@ while True:
     while True:
         try:
             charrace = int(input("""
-            Choose a race:
-            1. Orc (health & damage scaling)
-            2. Elf (mana & agility scaling)
-            3. Human (accuracy & stamina scaling)
-            """))
+Choose a race:
+
+1. Orc (health & damage scaling)
+2. Elf (mana & agility scaling)
+3. Human (accuracy & stamina scaling)
+
+"""))
             break
         except:
             print("enter 1, 2 or 3")
     while True:
         try:
             charclass = int(input("""
-            1. Fighter (mele damage scaling)
-            2. Mage (mana scaling)
-            3. Brute (hitpoint scaling)
-            """))
+Choose a class:
+
+1. Fighter (mele damage scaling)
+2. Mage (mana scaling)
+3. Brute (hitpoint scaling)
+
+"""))
             break
         except:
             print("enter 1, 2 or 3")
@@ -101,7 +106,7 @@ while True:
     # The shitty code is over (not really)
 
 #Skillpoint allocation
-def skillpointallocation():
+def skillpointallocation(charhp, charmana, charstr, charstam, characc, charagil, skillpoints):
     print("Allocate {} skill points to your attributes of Health, Stamina, Mana, Strength, Accuracy and Agility: ".format(skillpoints))
     while True:
         try:
@@ -202,3 +207,5 @@ def enemyrand():
     enacc = ri(40,80)
     
 startgame.startgame()
+skillpointallocation(charhp, charmana, charstr, charstam, characc, charagil, skillpoints)
+print(charclass, charrace)
