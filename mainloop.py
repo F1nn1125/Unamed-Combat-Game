@@ -205,7 +205,9 @@ def enemyrand():
     enhp = ri((1, 10) * level)
     endmg = ri((1, 5) * level)
     enacc = ri(40,80)
-    
+    # this is horrible i am crying
+    # GRAAAAAAAAAAAAAAHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    throw(ValueError)
 startgame.startgame()
 skillpointallocation(charhp, charmana, charstr, charstam, characc, charagil, skillpoints)
 print(charclass, charrace)
