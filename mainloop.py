@@ -206,6 +206,7 @@ def enemyrand():
     endmg = ri((1, 5) * level)
     enacc = ri(40,80)
     
+    
 startgame.startgame()
 skillpointallocation(charhp, charmana, charstr, charstam, characc, charagil, skillpoints)
 print(charclass, charrace)
